@@ -46,3 +46,21 @@ const factorial = (x) => {
     }
     return result
 }
+
+const fibinacci = (n) => {
+    if(n <= 1) {
+        if(n < 0) {
+            return null
+        } else {
+            return n
+        }
+    } else {
+        let fibArray = [0, 1] //starting numbers
+        for (i = 2; i < n; i = add(i, 1)) {
+            let nextNum = add(fibArray[add(i, -1)], fibArray[add(i, -2)])
+            fibArray.push(nextNum)
+        }
+        console.log(fibArray)
+        return fibArray[n - 1]
+    }
+}
