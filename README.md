@@ -8,6 +8,9 @@ Customize this README.md however you want to turn it into documentation for your
 
 _(Instructions for how to install the unit testing framework and run the unit tests.)_
 
+
+
+
 ## Reflection
 
 Question 1: In this challenge, your `multiply` and `power` functions are only expected to work with inputs that are positive integers or zero. Why would it be difficult to also allow negative numbers and decimals given the constraints of the challenge (i.e. having to perform multiplication by doing addition in a loop)?
@@ -15,3 +18,5 @@ Question 1: In this challenge, your `multiply` and `power` functions are only ex
 Question 2: Why is it important that the functions that we write can gracefully handle invalid inputs instead of just letting the code produce JavaScript errors?
 
 _(Put your reflection answers here.)_
+
+
