@@ -7,14 +7,14 @@ const checkIfNumber = (x) => { //x should be a number
 }
 
 const add = (x, y) => {
-    if( !checkIfNumber(x) || !checkIfNumber(y)) {
+    if( !checkIfNumber(x) || !checkIfNumber(y)) { //check that both are a number
         return null
     }
     return x + y
 } 
 
 const multiply = (x, y) => {
-    if(!checkIfNumber(y)) {
+    if(!checkIfNumber(y)) { //x is already checked on the add function
         return null
     }
     let result = 0
