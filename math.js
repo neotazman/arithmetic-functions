@@ -17,21 +17,36 @@ const multiply = (x, y) => {
     if(!checkIfNumber(y)) { //x is already checked on the add function
         return null
     }
+    let newX = x
+    let newY = y
+    if(x < 0 || y < 0) {
+        if(x < 0 && y < 0) {
+            newX = add(0, -x)
+            newY = add(0, -y)
+        } else if (y < 0) {
+            newX = y
+            newY = x
+        }
+    }
+
     let result = 0
-    for (let i = 0; i < y; i = add(i, 1)) {
-        result = add(result, x)
+    for (let i = 0; i < newY; i = add(i, 1)) {
+        result = add(result, newX)
     }
     return result
 }
 
 const power = (x, n) => {
-    if(!checkIfNumber(n) || n < 0) { //x has to be a natural number
+    if(!checkIfNumber(n) || n < 0) { //n has to be a whole number
         return null
     }
     let result = 1
-    for(let i = 0; i < n; i = add(i, 1)) {
-        result = multiply(result, x)
+    let equation = (x, n) => { //i was trying to do if n was negative, but it's too tough. might do it later for my own purposes
+        for(let i = 0; i < n; i = add(i, 1)) {
+            result = multiply(result, x)
+        }        
     }
+    equation(x, n)
     return result
 }
 

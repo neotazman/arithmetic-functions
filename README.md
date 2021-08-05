@@ -1,8 +1,4 @@
-# Kenzie Academy Challenge: Arithmetic Functions
-
-Follow the instructions provided on my.kenzie.academy for this challenge. The `code.js` file is a placeholder. Feel free to rename it and/or add additional files to the project.
-
-Customize this README.md however you want to turn it into documentation for your project (including deleting these opening paragraphs). The only required section is **Reflection**, but if you used a unit testing framework, also fill in the **Running the Unit Tests** section. Be sure to use proper Markdown syntax in this file (here's a [cheatsheet PDF](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) of the basic syntax).
+## (here's a [cheatsheet PDF](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Running the Unit Tests
 
@@ -19,6 +15,8 @@ Question 2: Why is it important that the functions that we write can gracefully 
 
 _(Put your reflection answers here.)_
 
-1. 
+1. i got my multiply function to work with negative numbers, but i couldn't figure out how to do exponents without using division and i'm not doing that shit. it wasn't too hard to do negative numbers on multply, i just had to change the inputs so the loop would give the correct answer
+
+2. it doesn't matter too much in this example, but in larger applications it would suck if the whole code breaks just because it doesn't know what to do in an edge case
 
 
