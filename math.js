@@ -34,3 +34,15 @@ const power = (x, n) => {
     }
     return result
 }
+
+const factorial = (x) => {
+    if(!checkIfNumber(x)) {
+        return null
+    }
+    let result = 1
+
+    for (let i = x; i > 0; i = add(i, -1)) { //makes i start at x and continue down 1
+        result = multiply(result, i)
+    }
+    return result
+}

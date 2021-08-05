@@ -19,4 +19,6 @@ Question 2: Why is it important that the functions that we write can gracefully 
 
 _(Put your reflection answers here.)_
 
+1. 
+
 
