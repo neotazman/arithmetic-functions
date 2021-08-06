@@ -1,7 +1,7 @@
 // Your Code Here. 
 const checkIfInteger = (x) => {
     if(checkIfNumber(x)) {
-        if(x === Number.parseInt(Number.parseFloat(x).toFixed())) {
+        if(x === Number.parseInt(Number.parseFloat(x).toFixed())) { //idk if this counts as a math function
             return true
         }
     }
@@ -67,6 +67,7 @@ const factorial = (x) => {
     let result = 1
 
     for (let i = x; i > 0; i = add(i, -1)) { //makes i start at x and continue down 1
+        //if (i >= 22) return 'number too large to calculate' 
         result = multiply(result, i)
     }
     return result
