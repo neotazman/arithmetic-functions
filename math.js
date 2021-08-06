@@ -1,4 +1,12 @@
-// Your Code Here.
+// Your Code Here. 
+const checkIfInteger = (x) => {
+    if(checkIfNumber(x)) {
+        if(x === Number.parseInt(Number.parseFloat(x).toFixed())) {
+            return true
+        }
+    }
+    return null
+}
 
 const checkIfNumber = (x) => { //x should be a number
     if(typeof x !== 'number'){
@@ -14,7 +22,7 @@ const add = (x, y) => {
 } 
 
 const multiply = (x, y) => {
-    if(!checkIfNumber(y)) { //x is already checked on the add function
+    if(!checkIfInteger(y) || !checkIfInteger(x)) { //the multiply function can't take decimals
         return null
     }
     let newX = x
@@ -37,7 +45,7 @@ const multiply = (x, y) => {
 }
 
 const power = (x, n) => {
-    if(!checkIfNumber(n) || n < 0) { //n has to be a whole number
+    if(!checkIfInteger(n) || n < 0) { //n has to be a whole number
         return null
     }
     let result = 1
@@ -51,8 +59,10 @@ const power = (x, n) => {
 }
 
 const factorial = (x) => {
-    if(!checkIfNumber(x)) {
+    if(!checkIfNumber(x) || x < 0) {
         return null
+    } else if(x === 0) {
+        return x
     }
     let result = 1
 
