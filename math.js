@@ -1,12 +1,5 @@
 // Your Code Here. 
-const checkIfInteger = (x) => {
-    if(checkIfNumber(x)) {
-        if(x === Number.parseInt(Number.parseFloat(x).toFixed())) { //idk if this counts as a math function
-            return true
-        }
-    }
-    return null
-}
+const checkIfInteger = (x) =>  x === parseInt(x)
 
 const checkIfNumber = (x) => { //x should be a number
     if(typeof x !== 'number'){
@@ -90,3 +83,10 @@ const fibinacci = (n) => {
         return fibArray[n - 1]
     }
 }
+
+
+console.log(add(2, 3))
+console.assert(add(2, 3) === 2 + 3, "function doesn't work")
+
+console.log(add())
+
