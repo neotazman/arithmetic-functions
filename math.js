@@ -88,7 +88,7 @@ const fibinacci = (n) => {
             fibArray.push(nextNum)
         }
         console.log(fibArray)
-        return fibArray[n - 1]
+        return fibArray[add(n, -1)]
     }
 }
 
